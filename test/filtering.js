@@ -19,7 +19,7 @@ describe('Blocking offensive words from queries', function () {
 
   it('should not block sentence about shitake mushrooms', function () {
     // But shitake mushrooms are fine. This needs more clever handling!
-    var query = "Shitake is my favorite musrhoom."
+    var query = "Shitake is my favorite mushroom."
     assert.equal(bot.isPermitted(query), true)
   });
 
