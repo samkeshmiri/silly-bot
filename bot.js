@@ -18,7 +18,7 @@ function isPermitted(query) {
 	var lower = v.lowerCase(query);
 	if (v.includes(lower, "shitake")) return true;
 	if (v.includes(lower, "brexit")) return false;
-	if (v.includes(lower, "shit")) return true;
+	if (v.includes(lower, "shit")) return false;
 	return true;
 }
 
