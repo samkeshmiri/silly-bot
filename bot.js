@@ -6,8 +6,10 @@ function answerQuery(query) {
   // 'query' to lover-case and then tests if the query contains various keywords
   // using 'v.includes'. You call all 'voca' functions by typing 'v.<some function>'/  
   query = v.lowerCase(query);
-  if (v.includes(query, "rain") || v.includes(query, "sun") || v.includes(query, "weather") || v.includes(query, "tea"))
-    return "I do not care too much about weather, I'm locked inside a data center.";
+  if (v.includes(query, "tea"))
+	return 'I would love some tea, but they have not created one for silicon-based life forms yet.';
+  if (v.includes(query, "rain") || v.includes(query, "sun") || v.includes(query, "weather"))
+    return "I do not care too much about weather, I'm locked inside a data center.";	
   return "Sorry Dave, I cannot do that."
 }
 
